@@ -53,17 +53,15 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: [
-        "src/**/*.java",
-        "src/**/*.kt",
-        "ShirayukiDashboard/src/**/*.java",
-        "ShirayukiDashboard/src/**/*.kt",
+    srcs: ["src/**/*.java", "src/**/*.kt",
+           "ShirayukiDashboard/src/**/*.java",
     ],
 
-    aaptflags: ["--extra-packages com.itzkaguya.yukidashboards"],
+    aaptflags: ["--extra-packages com.itzkaguya.yukidashboard"],
 
-    resource_dirs: ["res",
-                    "ShirayukiDashboard/res"
+    resource_dirs: [
+        "res",
+        "ShirayukiDashboard/res",
     ],
 
     static_libs: [
